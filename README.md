@@ -109,3 +109,79 @@ This guide explains how to set up and deploy RoastBot locally.
 
 ## License
 This project uses the **Tiger-Gemma-9B-v3-GGUF** model, available under the terms specified by its creators. Ensure compliance with all applicable licenses before use.
+
+
+
+# Step 2 : Setup Ngrok for Exposing RoastBot to Alexa
+
+To provide Alexa access to the RoastBot, we need to expose it to the internet. **Ngrok** is a great tool for creating a secure tunnel to your local machine, allowing you to expose your local server to the web with a public URL. This URL will be linked to the port where Ollama (RoastBot) is running.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+  - [Step 1: Install Ngrok](#step-1-install-ngrok)
+  - [Step 2: Get Your Ngrok Authtoken](#step-2-get-your-ngrok-authtoken)
+  - [Step 3: Start the Ngrok Tunnel](#step-3-start-the-ngrok-tunnel)
+  - [Step 4: Claim Your Static Domain](#step-4-claim-your-static-domain)
+  - [Step 5: Run Ngrok with Static URL](#step-5-run-ngrok-with-static-url)
+  
+---
+
+## Prerequisites
+
+- **Ollama** is installed and running on your local machine with RoastBot active (usually at port 11434).
+- **Ngrok** installed via `pip` or downloaded from the official site.
+- **Ngrok account** for accessing the static URL feature.
+
+---
+
+## Setup Instructions
+
+### Step 1: Install Ngrok
+To install Ngrok, you can use the following command with `pip`:
+```bash
+pip install pyngrok
+```
+
+This will install the Python wrapper for Ngrok, making it easy to control from your terminal.
+
+### Step 2: Get Your Ngrok Authtoken
+1. Sign up or log in to your Ngrok account at [ngrok.com](https://ngrok.com).
+2. Navigate to your [Ngrok Dashboard](https://dashboard.ngrok.com).
+3. Find your **Authtoken** on the dashboard under the "Auth" section.
+
+
+### Step 3: Start the Ngrok Tunnel
+- By default, **Ollama** runs on port `11434`. We will use Ngrok to expose this port to the internet.
+- Run the following command to start the Ngrok tunnel:
+  ```bash
+  ngrok http 11434 --authtoken 3pLtG8yQZmK7OXuhJ5PnvR12bE_d9cWYrFsITxLkHfoMCqA
+  ```
+  This command will create a temporary public URL that forwards to your local port 11434. However, these URLs are dynamic and will change each time you restart Ngrok, so we need to claim a static URL.
+
+### Step 4: Claim Your Static Domain
+To ensure you get a consistent URL each time Ngrok starts, you can claim a static URL under Ngrok's free plan.
+
+1. Log in to your Ngrok account at [ngrok.com](https://ngrok.com).
+2. Navigate to [Ngrok Domains](https://dashboard.ngrok.com/domains).
+3. Follow the prompts to claim a unique static domain. For example, you could claim a domain like `swift-fox-running.ngrok-free.app`.
+
+### Step 5: Run Ngrok with Static URL
+Once you’ve claimed your static domain, you can run Ngrok with the specified URL. Use this command to expose your local RoastBot instance with your static Ngrok domain:
+
+```bash
+ngrok http 11434 --url=swift-fox-running.ngrok-free.app --host-header="localhost:11434" --authtoken 3pLtG8yQZmK7OXuhJ5PnvR12bE_d9cWYrFsITxLkHfoMCqA
+```
+
+This will bind the public URL (e.g., `swift-fox-running.ngrok-free.app`) to your local port `11434`, allowing Alexa to interact with RoastBot.
+<img width="734" alt="ngrok_tunnel" src="https://github.com/user-attachments/assets/61b4bb54-8eda-4657-a29d-374a95baf902">
+---
+
+
+### Additional Notes:
+- **Ngrok Sessions**: Ngrok sessions are temporary, but by claiming a static URL, you can ensure a consistent public endpoint for interacting with your RoastBot.
+- **Security**: Be cautious when exposing local servers to the internet. Ngrok offers additional features for secure tunnels and restricting access, which you can explore in the Ngrok documentation.
+
+--- 
+
+With these steps, your RoastBot should now be accessible via the public Ngrok URL, ready to interact with Alexa or any other external service!
