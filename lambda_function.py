@@ -190,7 +190,7 @@ class CatchAllExceptionHandler(AbstractExceptionHandler):
 def generate_ollama_response(new_question):
 
 
-    url = "https://light-pheasant-alive.ngrok-free.app/api/generate"
+    url = "https://swift-fox-running.ngrok-free.app/api/generate"
     headers = {
         "Content-Type": "application/json"
     }
