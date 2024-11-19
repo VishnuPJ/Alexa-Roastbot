@@ -1,7 +1,6 @@
 # Alexa-Roastbot-GPT
 
 # Step 1 : Creating a Roastbot using Ollama
-## RoastBot: A Roasting Bot Using Ollama
 
 ## Table of Contents
 - [Overview](#overview)
