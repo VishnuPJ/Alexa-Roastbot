@@ -35,8 +35,7 @@ This guide explains how to set up and deploy RoastBot locally.
   ```
   You should see the installed version displayed. If not, revisit Step 1.
 
-![Check Ollama Installation]("https://github.com/user-attachments/assets/c1d23688-11fb-4be9-a629-3c1d5c7ea093)
-<img width="534" alt="ollama_check" src="https://github.com/user-attachments/assets/c1d23688-11fb-4be9-a629-3c1d5c7ea093">
+<img width="700" alt="ollama_check" src="https://github.com/user-attachments/assets/c1d23688-11fb-4be9-a629-3c1d5c7ea093">
 
 ---
 
@@ -68,7 +67,8 @@ This guide explains how to set up and deploy RoastBot locally.
   ollama create roastbot -f Modelfile
   ```
 
-![Building RoastBot](path_to_your_image)
+<img width="700" alt="ollama_build" src="https://github.com/user-attachments/assets/bd24c447-bd36-4074-bd85-456d3cf4917a">
+
 
 ---
 
@@ -79,7 +79,7 @@ This guide explains how to set up and deploy RoastBot locally.
   ```
 - You should see `roastbot` listed as an available model.
 
-![Verify RoastBot](path_to_your_image)
+<img width="700" alt="ollama_check_model" src="https://github.com/user-attachments/assets/56ad765e-3f35-4425-b7c5-d0b749f4e381">
 
 ---
 
@@ -90,8 +90,7 @@ This guide explains how to set up and deploy RoastBot locally.
   ```
 - The bot will initialize and wait for your prompts.
 
-![Run RoastBot](path_to_your_image)
-
+<img width="929" alt="ollama_response_check" src="https://github.com/user-attachments/assets/fa7f4b3f-06b1-4186-907f-6c68e40cb2b0">
 ---
 
 ### Step 8: Test the Service
@@ -102,6 +101,7 @@ This guide explains how to set up and deploy RoastBot locally.
   ```
 - You should see the message:
   ```
+
   Ollama is running
   ```
 
