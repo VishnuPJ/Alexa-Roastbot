@@ -1,6 +1,6 @@
 # Alexa-Roastbot-GPT
 
-# 🛠️ **Step 1 : Creating a Roastbot using Ollama**
+# 🛠️ **Step 1 : Creating a Roastbot using Ollama** 
 
 ## Table of Contents
 - [Overview](#overview)
@@ -112,7 +112,7 @@ This project uses the **Tiger-Gemma-9B-v3-GGUF** model, available under the term
 
 
 
-# 🛠️ **Step 2 : Setup Ngrok for Exposing RoastBot to Alexa**
+# 🖥️ **Step 2 : Setup Ngrok for Exposing RoastBot to Alexa** 
 
 To provide Alexa access to the RoastBot, we need to expose it to the internet. **Ngrok** is a great tool for creating a secure tunnel to your local machine, allowing you to expose your local server to the web with a public URL. This URL will be linked to the port where Ollama (RoastBot) is running.
 
