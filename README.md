@@ -1,5 +1,9 @@
 # Alexa-Roastbot-GPT
 
+<p align="center">
+  <img width="300" alt="response" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
+</p>
+
 # 🛠️ **Step 1 : Creating a Roastbot using Ollama** 
 
 ## Table of Contents
@@ -185,3 +189,103 @@ This will bind the public URL (e.g., `swift-fox-running.ngrok-free.app`) to your
 --- 
 
 With these steps, your RoastBot should now be accessible via the public Ngrok URL, ready to interact with Alexa or any other external service!
+
+
+# Step 3 : RoastBot Alexa Skill Setup Guide
+
+## Overview
+This guide will walk you through the steps to create an Alexa skill called **"roasting skill"**, which will be integrated with the **RoastBot** functionality. After completing these steps, your Alexa will be able to roast users with sharp wit and creativity.
+
+---
+
+## Setup Instructions
+
+### Step 1: Log in to Amazon Developer Console
+- Log in to your **Amazon Developer** account at [developer.amazon.com](https://developer.amazon.com/).
+- Navigate to the **Alexa Developer Console**.
+
+### Step 2: Create a New Skill
+- Click on **"Create Skill"** to begin.
+
+
+<img width="837" alt="create_skill" src="https://github.com/user-attachments/assets/3800e375-3963-4756-9a58-2499c8e2e9a6">
+
+### Step 3: Name the Skill
+- Name the skill **"roasting skill"**.
+- Choose the primary locale based on your language preference.
+- Click **Next** to proceed.
+
+<img width="769" alt="name_skill" src="https://github.com/user-attachments/assets/fe579169-97b9-499a-bc39-8d67cccbdea3">
+
+
+### Step 4: Choose the Skill Model
+- Select **"Other"** for the skill type.
+- Choose **"Custom"** for the interaction model.
+  
+<img width="928" alt="choose_model" src="https://github.com/user-attachments/assets/38d452db-c45e-4106-bb25-bfd3f4d6f68f">
+
+
+### Step 5: Choose Backend Resource
+- Select **"Alexa-hosted (Python)"** for the backend resource.
+- Click **Next**.
+
+<img width="708" alt="hosting_service" src="https://github.com/user-attachments/assets/3b6ad2e7-c653-4947-897f-7532ce7d0b27">
+
+
+### Step 6: Start from Scratch
+- Choose **"Start from Scratch"** to begin with a blank skill template.
+- Click **Next**.
+
+<img width="713" alt="templates" src="https://github.com/user-attachments/assets/eaf3d3e5-f0bb-4039-8c6e-5755b3a5eae3">
+
+
+### Step 7: Review and Create
+- Review your selections, then click on **"Create Skill"**.
+<img width="713" alt="templates" src="https://github.com/user-attachments/assets/a04e7066-7379-4b11-becc-e9028a273e41">
+
+### Step 8: Update Interaction Model
+- In the **Build** section, navigate to the **"JSON Editor"** tab under **Interaction Model**.
+- Replace the existing JSON content with the [provided JSON content](https://github.com/VishnuPJ/Alexa-Roastbot-GPT/blob/main/json_editor.json) :
+
+<img width="848" alt="json" src="https://github.com/user-attachments/assets/9250d8b6-3957-42e0-b2b9-7049cf26cda7">
+
+### Step 9: Build the Model
+- Click **Save** to save the model.
+
+- After saving, click on **"Build Model"** to compile your interaction model.
+
+### Step 10: Add Required Dependencies
+- Go to the **"Code"** section.
+- Add **"requests"** to the `requirements.txt` file.
+- Your `requirements.txt` should look like this:
+
+```text
+ask-sdk-core==1.11.0
+boto3==1.9.216
+requests>=2.20.0
+```
+
+### Step 11: Replace Lambda Function Code
+- In the **"Code"** section, replace the contents of the `lambda_function.py` file with the [provided Python code]("https://github.com/VishnuPJ/Alexa-Roastbot-GPT/blob/main/lambda_function.py"):
+
+
+### Step 12: Save and Deploy
+- Save your changes and click **Deploy** to update the skill on Alexa’s backend.
+
+### Step 13: Enable Skill Testing
+- Go to the **"Test"** section and enable **"Skill testing"** under **Development**.
+
+<img width="692" alt="skill_testing" src="https://github.com/user-attachments/assets/050582d4-636f-4fda-84aa-93e40221b46e">
+
+
+### Step 14: Test RoastBot Mode
+- Once testing is enabled, you can begin interacting with your **RoastBot** skill.
+- You should now receive responses like this from Alexa:
+
+<img width="300" alt="resonse" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
+
+---
+
+
+## Conclusion
+Your **RoastBot** Alexa skill is now up and running. Enjoy testing it out and roasting your friends with unfiltered, creative comebacks!
