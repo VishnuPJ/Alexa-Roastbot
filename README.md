@@ -274,7 +274,8 @@ This guide will walk you through the steps to create an Alexa skill called **"ro
 - In the **Build** section, navigate to the **"JSON Editor"** tab under **Interaction Model**.
 - Replace the existing JSON content with the [provided JSON content](https://github.com/VishnuPJ/Alexa-Roastbot-GPT/blob/main/json_editor.json) :
 
-<img width="848" alt="json" src="https://github.com/user-attachments/assets/9250d8b6-3957-42e0-b2b9-7049cf26cda7">
+<img width="900" alt="json" src="https://github.com/user-attachments/assets/fe81f093-fcca-4497-863c-662f707faddb">
+
 
 ### Step 9: Build the Model
 - Click **Save** to save the model.
