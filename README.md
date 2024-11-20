@@ -5,9 +5,7 @@
 </p>
 
 ## Demo
-
 Here’s a quick demo of the RoastBot:
-
 <video src='https://github.com/user-attachments/assets/140e5ce5-d33d-40b3-9173-30066e9859c4' width=180/>
   
 # 🛠️ **Step 1 : Creating a Roastbot using Ollama** 
