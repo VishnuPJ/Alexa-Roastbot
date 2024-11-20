@@ -1,7 +1,7 @@
 # Alexa-Roastbot-GPT
 
 <p align="center">
-  <img width="300" alt="response" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
+  <img width="400" alt="response" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
 </p>
 
 # 🛠️ **Step 1 : Creating a Roastbot using Ollama** 
@@ -193,6 +193,25 @@ With these steps, your RoastBot should now be accessible via the public Ngrok UR
 
 # Step 3 : RoastBot Alexa Skill Setup Guide
 
+## Table of Contents
+1. [Overview](#overview)  
+2. [Setup Instructions](#setup-instructions)  
+   - [Step 1: Log in to Amazon Developer Console](#step-1-log-in-to-amazon-developer-console)  
+   - [Step 2: Create a New Skill](#step-2-create-a-new-skill)  
+   - [Step 3: Name the Skill](#step-3-name-the-skill)  
+   - [Step 4: Choose the Skill Model](#step-4-choose-the-skill-model)  
+   - [Step 5: Choose Backend Resource](#step-5-choose-backend-resource)  
+   - [Step 6: Start from Scratch](#step-6-start-from-scratch)  
+   - [Step 7: Review and Create](#step-7-review-and-create)  
+   - [Step 8: Update Interaction Model](#step-8-update-interaction-model)  
+   - [Step 9: Build the Model](#step-9-build-the-model)  
+   - [Step 10: Add Required Dependencies](#step-10-add-required-dependencies)  
+   - [Step 11: Replace Lambda Function Code](#step-11-replace-lambda-function-code)  
+   - [Step 12: Save and Deploy](#step-12-save-and-deploy)  
+   - [Step 13: Enable Skill Testing](#step-13-enable-skill-testing)  
+   - [Step 14: Test RoastBot Mode](#step-14-test-roastbot-mode)  
+3. [Conclusion](#conclusion)
+   
 ## Overview
 This guide will walk you through the steps to create an Alexa skill called **"roasting skill"**, which will be integrated with the **RoastBot** functionality. After completing these steps, your Alexa will be able to roast users with sharp wit and creativity.
 
@@ -266,7 +285,7 @@ requests>=2.20.0
 ```
 
 ### Step 11: Replace Lambda Function Code
-- In the **"Code"** section, replace the contents of the `lambda_function.py` file with the [provided Python code]("https://github.com/VishnuPJ/Alexa-Roastbot-GPT/blob/main/lambda_function.py"):
+- In the **"Code"** section, replace the contents of the `lambda_function.py` file with the [provided Python code](https://github.com/VishnuPJ/Alexa-Roastbot-GPT/blob/main/lambda_function.py):
 
 
 ### Step 12: Save and Deploy
