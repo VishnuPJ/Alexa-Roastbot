@@ -1,8 +1,12 @@
 # Alexa-Roastbot
 
-<p align="center">
-  <img width="400" alt="response" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
-</p>
+## Introduction
+Welcome to Alexa-Roastbot, a project that transforms Amazon’s polite assistant into a chatbot with attitude! Built purely for fun, Roastbot is designed to deliver sharp, witty comebacks and next-level roasts, all powered by an uncensored large language model (LLM).Unlike typical AI models that play it safe with neutral or polite responses, Roastbot pushes the boundaries of conventional chatbots. It runs on the Ollama framework and utilizes an uncensored LLM to embrace humor, sarcasm, and creativity—no filters, no restrictions.
+
+I have given all the steps to build Roastbot or any other bot in this repo.
+
+
+<img width="400" alt="response" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
 
 ## Demo
 Here’s a quick demo of the RoastBot:
@@ -264,7 +268,7 @@ This guide will walk you through the steps to create an Alexa skill called **"ro
 
 ### Step 7: Review and Create
 - Review your selections, then click on **"Create Skill"**.
-<img width="713" alt="templates" src="https://github.com/user-attachments/assets/a04e7066-7379-4b11-becc-e9028a273e41">
+<img width="713" alt="templates" src="https://github.com/user-attachments/assets/48456af3-225d-4e98-bf1c-85559a0690a0">
 
 ### Step 8: Update Interaction Model
 - In the **Build** section, navigate to the **"JSON Editor"** tab under **Interaction Model**.
