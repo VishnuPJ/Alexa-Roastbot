@@ -1,4 +1,4 @@
-# Alexa-Roastbot-GPT
+# Alexa-Roastbot
 
 <p align="center">
   <img width="400" alt="response" src="https://github.com/user-attachments/assets/e15d52db-4096-4f71-be5c-6bd15a50a0f6">
