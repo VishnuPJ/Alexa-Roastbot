@@ -191,7 +191,7 @@ This will bind the public URL (e.g., `swift-fox-running.ngrok-free.app`) to your
 With these steps, your RoastBot should now be accessible via the public Ngrok URL, ready to interact with Alexa or any other external service!
 
 
-# Step 3 : RoastBot Alexa Skill Setup Guide
+# 🤖 **Step 3 : RoastBot Alexa Skill Setup Guide**
 
 ## Table of Contents
 1. [Overview](#overview)  
