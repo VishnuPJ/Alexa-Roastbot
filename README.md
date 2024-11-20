@@ -308,3 +308,12 @@ requests>=2.20.0
 
 ## Conclusion
 Your **RoastBot** Alexa skill is now up and running. Enjoy testing it out and roasting your friends with unfiltered, creative comebacks!
+
+## Demo
+
+Here’s a quick demo of the RoastBot:
+
+<video src='https://github.com/user-attachments/assets/140e5ce5-d33d-40b3-9173-30066e9859c4' width=180/>
+
+
+
